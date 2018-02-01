@@ -2,19 +2,140 @@
 <html>
 <head>
 
-  <title="MAAH SENEGAMBIA">
+  <title="MAAH SENEGAMBIA TAKEAWAY">
   <style>
+
+    body{
+      padding-top: 20px;
+      font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 14px;
+    }
+
+    @media{
+      min-width: 1200px;
+    }.container{
+      width: 1170px;
+    }
+
+    @media{
+      min-width: 992px;
+    }.container{
+      /* width: 970px; */
+    }
+
+    @media{
+      min-width: 768px;
+    }.container{
+      /* width: 750px; */
+    }
+
+    .container{
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    @media{
+      min-width: 768px;
+    }
+    .navbar{
+      /* width:2000px;
+      height:253px; */
+      position: relative;
+      background-color: #3e3f3a;
+      min-height: 60px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+    }
+
+    .container-fluid{
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+
+    .nav{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-transform: uppercase;
+    }
+
+    .navbar .nav>li>a{
+      font-size: 11px;
+      line-height: 22px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .navbar-default .navbar-nav>li>a{
+      color: #98978b;
+    }
+
+    @media{
+      min-width: 768px;
+    }.navbar-nav>li>a{
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .nav>li>a{
+      display: block;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+
+    @media{
+      min-width: 768px;
+    }.navbar-nav{
+      float: left;
+      margin: 0;
+    }
+
+    .nav li{
+      display:  inline;
+    }
+
+    .nav a{
+      /* color: #ffffff; */
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .router-link{
+      
+    }
 
   </style>
 </head>
 <body>
-  <div id="app" class="container">
-    <router-view></router-view>
-  </div>
+    <div id="app" class="container">
+      <div class="navbar navbar-default">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#/" class="router-link">Home</a>
+            </li>
+            <li>
+              <a href="#/contact" class="router-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-  <script src="js/vendor/vue@2.3.js"></script>
-  <script src="js/vendor/vue-router@2.5.js"></script>
-  <script src="js/app.js"></script>
+      <router-view></router-view>
+    </div>
+
+    <script src="js/vendor/vue@2.3.js"></script>
+    <script src="js/vendor/vue-router@2.5.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
 </html>
