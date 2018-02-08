@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  }
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .nav {
+            border-radius: 4px;
+      }
+}
+
+.navbar  {
+  background-color: #3e3f3a;
+  color: #ffffff;
+  list-style: none;
+  text-align: center;
+  position: relative;
+  bottom:  130px;
+  /* padding: 20px 0 20px 0; */
+  min-height: 60px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  /* opacity:  0.45; */
+  border-radius: 4px;
+  padding-top: 10px;
+}
+
+/* @media screen and (min-width: 768px){
+  .nav {
+      float: left;
+      margin: 0;
+    }
+} */
+
+@media and (min-width: 768px){
+    .navbar-nav>li {
+        float: left;
+      }
+}
+
+.navbar .nav > li {
+  position: relative;
+  display: block;
+  padding: 0 25px 0 25px;
+  line-height: 50px;
+}
+
+.navbar .nav > li > a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 22px;
+  font-weight: 500;
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+@media and (min-width: 768px){
+.nav > li > a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+}
+
+.navbar .nav > li > a:hover {
+  color: #c1c1c1;
+}
+
+/* .container-fluid {
+  background-image: url("img/home-photo.png");
+  background-repeat: repeat;
+  background-size: 100% 100%;
+  padding-top: 900px;
+  position: relative;
+  bottom:85px;
+} */
+
+.restaurant-name {
+  color: #000000;
+  font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-align: center;
+  position: relative;
+  bottom:358px;
+  font-weight: bold;
+}
+
+.restaurant-info .restaurant-address {
+  color: #000000;
+  font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-align: center;
+  position: relative;
+  bottom:358px;
+}
+
+.address-info {
+  color: #000000;
+  font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-align: center;
+  position: relative;
+  bottom:358px;
+}
+
+.gambia-flag {
+  /* padding-left: 450px; */
+  /* padding: 280px; */
+}
+
+
+.senegal-flag {
+  /* padding-left: 450px; */
+  /* padding: 280px; */
+}
