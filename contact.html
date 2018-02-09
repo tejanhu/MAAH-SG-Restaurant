@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>MAAH SENEGAMBIA TAKEAWAY</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+
+    .container-fluid .nav {
+      background-color: #3e3f3a;
+      color: #ffffff;
+      list-style: none;
+      text-align: center;
+      padding: 20px 0 20px 0;
+    }
+
+    .nav > li {
+      display: inline-block;
+      padding: 0 25px 0 25px;
+    }
+    .nav > li > a {
+      text-decoration: none;
+      color: #ffffff;
+      text-transform: uppercase;
+      font-size: 11px;
+    }
+
+    .nav > li > a:hover {
+      color: #c1c1c1;
+    }
+
+    #footer {
+      background-color: #3e3f3a;
+      height: 50px;
+      margin-top: 520px;
+    }
+
+    .container-footer {
+      color: #666;
+      font-weight: 700;
+      padding-top: 20px;
+      text-align:center;
+    }
+
+    .form {
+      text-align: center;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    #msg {
+      height: 200px;
+    }
+
+    input[type=submit] {
+      background-color: #0066ff;
+      color: #ffffff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #0047b3;
+    }
+
+    /* .line {
+      border-style: inset;
+    } */
+
+    .contact {
+      /* font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif; */
+    }
+
+  </style>
+</head>
+<body>
+    <div id="app" class="container">
+      <div class="navbar navbar-default">
+        <div class="container-fluid">
+          <ul class="nav">
+            <li>
+              <a href="index.html" class="router-link">Home</a>
+            </li>
+            <li>
+              <a href="#/" class="router-link">Menu</a>
+            </li>
+            <li>
+              <a href="#/" class="router-link">Our Story</a>
+            </li>
+            <li>
+              <a href="#/" class="router-link">Offer</a>
+            </li>
+            <li>
+              <a href="#/contact" class="router-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <router-view></router-view>
+      <div>
+        <h1 class="contact">Contact Form</h1>
+        <p class="contact">Contact us for your queries.</p>
+        <div class="line"></div>
+
+      </div>
+      <div class="form">
+
+        <form>
+          <input type="text" placeholder="Your Name..."><br/><br/>
+          <input type="text" placeholder="Your Email Address..."><br/><br/>
+          <input type="text" placeholder="Your Subject..."><br/><br/>
+          <textarea name="msg" id="input-msg" placeholder="Type your Message here...">
+          </textarea><br/>
+          <input class="send-btn" type="submit" value="Send">
+        </form>
+
+      </div>
+
+      <footer id="footer"><div class="container-footer">&copy; 2007 - 2009 Maah Senegambian Takeaway. All Rights Reserved. Developed by Hussein Tejan</div></footer>
+
+    </div>
+
+    <script src="js/vendor/vue@2.3.js"></script>
+    <script src="js/vendor/vue-router@2.5.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
